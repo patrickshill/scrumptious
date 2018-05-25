@@ -1,0 +1,98 @@
+// CSS RESET
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: none;
+    font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+//Nav vars
+@nav-background-color: #29434e;
+@nav-height: 80px;
+@nav-color: white;
+@nav-font: 'Roboto', sans-serif;
+@nav-box-shadow: 0 4px solid black;
+
+//Main section vars
+@main-background-color: #f5f5f6;
+
+//Buttons
+@btn-normal: #9e9d24;
+@btn-normal-hover: #6c6f00;
+@btn-radius-normal: 4px;
+
+
+//GLOBAL styles
+.btn {
+    font-family: @nav-font;
+    font-size: 16pt;
+}
+.btn-normal {
+    margin: 4px;
+    padding: 10px 20px;
+    font-size: 16pt;
+    font-weight: 300;
+    border: none;
+    color: white;
+    background-color: @btn-normal;
+}
+
+.btn-normal:hover {
+    background-color: @btn-normal-hover;
+}
+
+.nav {
+    width: 100%;
+    height: @nav-height;
+    background-color: @nav-background-color;
+    box-shadow: @nav-box-shadow;
+}
+
+#logo {
+    display: inline-block;
+    padding-left: 40px;
+    height: @nav-height;
+    h1{
+        font-family: @nav-font;
+        font-size: 2em;
+        font-weight: bold;
+        color: @nav-color;
+        line-height: @nav-height;
+    }
+}
+#nav-login-register {
+    padding-right: 40px;
+    // display: inline-block;
+    line-height: @nav-height;
+    float: right;
+}
+
+.main {
+    width: 100%;
+    min-height: 600px;
+    background-color: @main-background-color;
+    font-family: 'Raleway', sans-serif;
+    overflow: auto;
+    h1,h2,h3,h4,h5,h6 {
+        font-family: @nav-font;
+    }
+}
